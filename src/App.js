@@ -6,6 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import TypoGraphy from '@material-ui/core/Typography';
 import NavBar from './navbar';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import HospitalSearch from './hospitalsearch';
 
 
 class App extends Component{
@@ -18,10 +19,10 @@ class App extends Component{
             <TypoGraphy variant={"h4"} color="inherit" >
             Hospital Finder <LocalHospitalIcon fontSize="large"></LocalHospitalIcon>
             </TypoGraphy>
-            <NavBar></NavBar>
-
+            <NavBar></NavBar>           
           </Toolbar>
         </AppBar>
+        <HospitalSearch></HospitalSearch>
       </div>
     );
   }
