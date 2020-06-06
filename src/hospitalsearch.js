@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import DirectionsIcon from '@material-ui/icons/Directions';
+import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
 
 const useStyles = makeStyles((theme) => createStyles({
     root: {
@@ -38,7 +39,7 @@ export default function HospitalSearch()
         style={{
           display: "flex",
           justifyContent: "center",
-          margin: 250,
+          margin: 20,
           padding: 20
         }}>
       <Paper component="form" className={classes.root}>
